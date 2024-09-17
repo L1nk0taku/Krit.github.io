@@ -1,0 +1,37 @@
+/* Theme color 1 */
+body {
+    background-color: #b4c5d6; /* Light gray background for better contrast */
+}
+
+.header {
+    background-color: #003366; /* Dark blue header background */
+}
+
+.navbar ul li a {
+    color: #ffffff; /* White text for navbar links */
+}
+
+.home {
+    background: #002244; /* Darker blue for home section background */
+    color: #052d3d; /* White text for home section */
+}
+
+.about.btn {
+    background-color: #003366; /* Dark blue button background in  section */
+}
+
+.about .bio-text h4 {
+    color: #003366; /* Dark blue color for headings in about section */
+}
+
+.contact-info-item .icon {
+    color: #003366; /* Dark blue color for contact icons */
+}
+
+.footer {
+    background-color: #002244; /* Darker blue for footer background */
+}
+
+.btn {
+    background-color: #003366; /* Dark blue button background */
+}
