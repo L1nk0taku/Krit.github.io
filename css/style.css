@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-body {
-    font-family: Arial, sans-serif;
-=======
 /* Default styles */
 body {
     margin: 0;
@@ -19,44 +15,10 @@ body {
     background-color: #333;
     color: #fff;
     width: 100%;
->>>>>>> ff932756eb2daa10e7de1be23a7346bd2f7101a5
     margin: 0;
     padding: 0;
 }
 
-<<<<<<< HEAD
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-    width: 80%; /* adjust the width to your liking */
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    margin: 20px auto;
-    width: 80%; /* adjust the width to your liking */
-}
-
-nav ul {
-=======
 .navbar {
     display: flex;
     justify-content: center;
@@ -64,46 +26,10 @@ nav ul {
 }
 
 .navbar ul {
->>>>>>> ff932756eb2daa10e7de1be23a7346bd2f7101a5
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #ccc;
-}
-
-.images {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.images img {
-    width: 50%; /* set the image width to 50% */
-    height: auto; /* maintain the aspect ratio */
-    margin: 0 auto; /* center the image horizontally */
-    border: 2px solid #666; /* add a 2px solid border to the image */
-    border-radius: 10px; /* add a 10px border radius to the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle box shadow to the image */
-}
-
-.description {
-    margin: 20px 0;
-}
-=======
 }
 
 .navbar ul li {
@@ -459,4 +385,152 @@ nav a:hover {
         width: 95%;
     }
 }
->>>>>>> ff932756eb2daa10e7de1be23a7346bd2f7101a5
+
+/* Achievements Section */
+.achievements {
+    padding: 50px 0;
+}
+
+.achievement-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.achievement-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.achievement-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.achievement-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #003366; /* Optional: Border for image */
+}
+
+.achievement-title {
+    font-size: 18px;
+    color: #003366;
+    margin-top: 15px;
+}
+
+.achievement-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 50px 0;
+    position: relative; /* Make the achievements section a positioning context */
+}
+
+.achievements-title {
+    position: relative; /* Ensure the title is positioned above the rectangle */
+    z-index: 1; /* Ensure the title is above the rectangle */
+    text-align: center; /* Center-align the title */
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the title */
+    color: #003366; /* Title text color */
+}
+
+/* White Rectangle Under Achievements Title */
+.achievements-rectangle {
+    position: absolute; /* Absolute positioning to place it behind the title */
+    top: 40px; /* Adjust based on where you want the rectangle to appear */
+    left: 0; /* Full width padding */
+    right: 0; /* Full width padding */
+    height: 80px; /* Adjust height as needed */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    z-index: 0; /* Ensure it is behind the title */
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 50px 0;
+    position: relative; /* Make the achievements section a positioning context */
+}
+
+.achievements-title {
+    position: relative; /* Ensure the title is positioned above the rectangle */
+    z-index: 1; /* Ensure the title is above the rectangle */
+    text-align: center; /* Center-align the title */
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the title */
+    color: #003366; /* Title text color */
+}
+
+/* White Rectangle Under Achievements Title */
+.achievements-rectangle {
+    position: absolute; /* Absolute positioning to place it behind the title */
+    top: 40px; /* Adjust based on where you want the rectangle to appear */
+    left: 0; /* Full width padding */
+    right: 0; /* Full width padding */
+    height: 80px; /* Adjust height as needed */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    z-index: 0; /* Ensure it is behind the title */
+}
+
+/* Achievements Grid Layout */
+.achievement-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center each item */
+}
+
+/* Achievement images */
+.achievement-content img {
+    width: 80%; /* Adjust image size */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* Hover effect: expand image */
+.achievement-content img:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+/* Center second row with two items */
+.achievement-items .achievement-item:nth-child(4),
+.achievement-items .achievement-item:nth-child(5) {
+    grid-column: span 1;
+    justify-self: center; /* Ensures the items are centered horizontally */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+    .achievement-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+
+    /* For the case when there are only 2 items in the second row, center them */
+    .achievement-items .achievement-item:nth-child(4),
+    .achievement-items .achievement-item:nth-child(5) {
+        grid-column: span 1;
+        justify-self: center; /* Centers items on the second row */
+    }
+}
+
+@media (max-width: 768px) {
+    .achievement-items {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .achievement-items .achievement-item {
+        justify-self: center; /* Center single column items */
+    }
+}
